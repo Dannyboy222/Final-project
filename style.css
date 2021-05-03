@@ -19,6 +19,7 @@ nav{
     align-items: center;
     width: 100%;
     background-color: white;
+    padding: 20px;
 }
 .logo img{
     height: 120px;
@@ -68,4 +69,51 @@ nav .menu li a:hover{
     color: white;
     box-shadow: 5px 10px 30px rgba(53,53,53,0.1);
     transition: all ease 0.2s;
+}
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.movie {
+    width: 300px;
+    margin: 1rem;
+    border-radius: 3px;
+    box-shadow: 0.2px 4px 5px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+}
+.movie img{
+    width: 100%;
+}
+.movie-info{
+    color:black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+.movie-info h3{
+    margin-top: 0;
+}
+.movie-info span{
+    background-color: grey;
+    padding:0.25rem 0.5rem;
+    border-radius: 3px;
+    font-weight: bold;
+}
+.overview{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 1rem;
+    max-height: 100%;
+    transform: translateY(-101%);
+    transition:transform 0.3s ease-in;
+}
+.movie:hover .overview{
+    transform: translateY(0);
 }
